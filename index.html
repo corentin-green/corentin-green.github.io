@@ -7,12 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" type="image/png" href="imgs/favico_72.png">
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=K2D:wght@700&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=K2D:wght@700&display=swap');
+
             :root {
                 --green-primary: #37C44D;
                 --blue-primary: #082942;
             }
             * {
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-family: 'Bai Jamjuree', sans-serif;
             }
             html {
                 height: 100%;
@@ -23,6 +26,9 @@
             }
             header, main {
                 padding: 10px;
+            }
+            header {
+                background-color: #F3FBF4;
             }
             header h1 {
                 color: var(--green-primary);
@@ -35,6 +41,9 @@
             section {
                 position: relative;
                 max-width: 800px;
+            }
+            h1, h2 {
+                font-family: 'K2D', sans-serif;
             }
             p {
                 line-height: 1.6em;
@@ -51,6 +60,34 @@
             }
             p#about_paiement {
                 font-size: 0.85em;
+            }
+            em {
+                color: var(--green-primary);
+                font-style: normal;
+                font-weight: bolder;
+            }
+
+            @media print {
+                header {
+                    background-color: none;
+                }
+                header h1 {
+                    color: #000000;
+                }
+                main {
+                    background-color: none;
+                    color: #000000;
+                }
+              
+                a {
+                    background-color: none;
+                    color: #000000;
+                }
+                
+                em {
+                    color:#000000;
+                   
+                }
             }
         </style>
     </head>
