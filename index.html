@@ -12,7 +12,10 @@
 
             :root {
                 --green-primary: #37C44D;
+                --green-light: #F3FBF4;
+                
                 --blue-primary: #082942;
+                --blue-light: #FAFCFE;
             }
             * {
                 font-family: 'Bai Jamjuree', sans-serif;
@@ -28,35 +31,45 @@
                 padding: 10px;
             }
             header {
-                background-color: #F3FBF4;
+                background-color: var(--green-light)
             }
             header h1 {
                 color: var(--green-primary);
             }
             main {
-                background-color: var(--blue-primary);
-                color: #ffffff;
+                /* background-color: var(--blue-primary);
+                color: #ffffff; */
                 height: 100%;
             }
             section {
-                position: relative;
-                max-width: 800px;
+                
+                /* max-width: 800px; */
+                background-color: var(--blue-light);
+                padding-bottom: 20px;
             }
+
+            /* section * {
+                margin: auto;
+                max-width: 1200px;
+            } */
+
             h1, h2 {
                 font-family: 'K2D', sans-serif;
             }
             p {
                 line-height: 1.6em;
             }
-            a {
+            a[role='button'] {
                 background-color: var(--green-primary);
                 color: #ffffff;
                 border-top-left-radius: 10px;
                 border-bottom-right-radius: 10px;
                 text-decoration: none;
                 padding:10px;
-                /* position: absolute; */
-                /* right: 10px; */
+            }
+            a {
+                color: var(--green-primary);
+                font-weight: bold;
             }
             p#about_paiement {
                 font-size: 0.85em;
@@ -65,6 +78,12 @@
                 color: var(--green-primary);
                 font-style: normal;
                 font-weight: bolder;
+            }
+            ul {
+                margin-bottom: 30px;
+            }
+            ul li {
+                line-height: 1.4rem;
             }
 
             @media print {
@@ -95,12 +114,12 @@
         <header>
             <picture>
                 <source srcset="imgs/logo_corentin_50pct.webp" media="(max-width: 500px)"/>
-                <img src="imgs/logo_corentin.webp" alt="Corentin"/>
+                <img src="imgs/logo_corentin.webp" alt="Corentin" width="200px"/>
             </picture>
             <h1>Formateur Green-IT</h1>
         </header>
         <main>
-            <section>
+            <!--<section>
                 <h1>1 seule planète, 9 frontières</h1>
                 <h2>Alignez vos réalisations numériques avec les ressources disponibles.</h2>
     
@@ -113,6 +132,112 @@
                 <p id="about_paiement">Liens vers la plateforme sécurisé de paiement Stripe. Vous pouvez modifier 
                     le nombre de réservation en affichant les détails.
                 </p>
+            </section>-->
+            <section>
+                <h1>Apprenez à concevoir des applications sobres et éco-conçu</h1>
+                <p>Devenez autonome dans l'art du GreenIT</p>
+                <ul>
+                    <li>Apprenez les impacts du numériques sur l'environnement</li>
+                    <li>Concevez des applications plus sobre avec 
+                        l'éco-conception de service numérique</li>
+                    <li>Mesurer votre performance environnemental et communiquez la.</li>
+                </ul>
+
+                <a href="https://book.stripe.com/9AQ7u78v79IE8p23cd" 
+                role="button">Réserver votre formation complète</a>
+
+                <p>
+                    ou contactez moi pour une <a href="#custom">formation sur mesure</a>.
+                </p>
+
+
+            </section>
+            <section>
+                <h1>POINTS CLÉS DU NUMERIQUES</h1>
+                
+                <div>
+                    <h2>Enpreinte Carbone</h2>
+                    <p><b>3 x</b> l'empreinte carbone de la France ou de l'Angleterre.</p>
+                </div>
+                
+                <div>
+                    <h2>COP 21</h2>
+                    <p><b>21 %</b> des émissions de Gaz à effet de serre admissible pour rester
+                    dans l'accord de Paris.</p>
+                </div>
+
+                <div>
+                    <h2>Gaz à Effet de Serre</h2>
+                    <p><b>4 %</b> des émissions de Gaz à effet de Serrre mondiale.</p>
+                </div>
+
+                <div>
+                    <h2>Electricité</h2>
+                    <p><b>10 %</b> de l'électricité produite dans le monde.</p>
+                </div>
+
+                <div>
+                    <h2>Réglementaire</h2>
+                    <p>
+                        La loi REEN impose actuellement aux communes 
+                        de plus de 50 000 habitants et aux EPCI à fiscalité propre regroupant
+                        plus de 50 000 habitants de définir une stratégie numérique responsable.
+                    </p>
+                    <p>
+                        Il faut noter que cette obligation légale uniquement imposée 
+                        aux communes sera aussi imposée aux grandes entreprises
+                        dans un second temp.
+                    </p>
+                </div>
+            </section>
+
+            <section id="custom">
+                <h1>Une Formation Green-IT sur mesure</h1>
+                <p>Pour le <b>Green-IT</b>, vous souhaitez :</p>
+                <ul>
+                    <li>
+                        apprendre plus, et faire monter en compétence vos équipes non-tech :
+                        manager, RH, commerciaux, etc... ?
+                    </li>
+                    <li>
+                        <b>donner les clés</b> à vos équipes de développement :
+                        développeur, ops, product owner, testeur ?
+                    </li>
+                    <li>Mettre en place un Meetup</li>
+                </ul>
+
+                <p>Contactez-moi <a href="https://www.linkedin.com/in/corentinjechoux/">via LinkedIn</a></p>
+
+            </section>
+
+            <section>
+                <h1>Votre formateur</h1>
+
+                <p>Je m'appelle <b>Corentin Jechoux</b>.</p>
+
+                <p>J'ai commencé à concevoir des applications et systèmes d'informaitons
+                     en 2006. Mais j'ai réalisé mon 1er "PacMan" en classe de CM2, à 10 ans, en Basic.</p>
+
+                <p>Je suis développeur fullstack, sur des architectures client légers (web) et client lourd.</p>
+
+                <p>J'ai travaillés sur les technologies JAVA, Web, Javascript, Typescript et Rust, SQL et NoSQL ainsi que sur des problématiques de performances.</p>
+
+                <p>J'ai commencé en tant que développeur, puis, tech-lead et manager. Je suis actuellement freelance : je code et je forme.</p>
+                
+                <p>
+                    J'ai construit cette formation à partir de mon expérience et de 
+                    mes lectures.
+                </p>
+
+                <p>J'ai enrichi et solidifié ma formation après avoir obtenu 3 certifications de 
+                    <a href="https://www.greenit.fr/">GreenIT.fr</a> :
+                </p>
+
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1wWV3RitJhKNWLIP91klGoEC0rd-Ob7tl/view">ACV </a></li>
+                    <li><a href="https://drive.google.com/file/d/1xXwqOoShALHxfYUOIwCObIcbzF05E55p/view">ECOCONCEPTION DE SERVICE NUMERIQUE</a></li>
+                    <li><a href="https://drive.google.com/file/d/1tgDnYWFep1Qz1fGKoLg4uXGsKo98g-kL/view">GREEN IT & NUMERIQUE RESPONSABLE</a> </li>
+                </ul>
             </section>
         </main>
         <footer></footer>
